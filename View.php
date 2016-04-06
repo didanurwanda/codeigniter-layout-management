@@ -84,7 +84,7 @@ class View
      * @param array $data
      * @param boolean $return
      */
-    protected function loadLayout($data = [], $return = false)
+    protected function loadLayout($data = array(), $return = false)
     {
         $this->controller->load->view($this->layout, $data, $return);
     }
