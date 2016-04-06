@@ -68,7 +68,7 @@ class View
      */
     public function renderPartial($view, $data = array(), $return = false)
     {
-        return $this->controller->load->view(get_class($this->controller) . DIRECTORY_SEPARATOR . $view, $data, $return);
+        return $this->controller->load->view(strtolower(get_class($this->controller)) . DIRECTORY_SEPARATOR . $view, $data, $return);
     }
 
     
