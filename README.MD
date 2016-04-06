@@ -16,13 +16,13 @@ class Welcome extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->library('view', array());
+        $this->load->library('view');
         $this->view->init($this); // required
     }
     
     public function index()
     {
-        $this->view->render('index'); // for directory 'welcome/index.php'
+        $this->view->render('index', array()); // for directory 'welcome/index.php'
     }
 }
 
