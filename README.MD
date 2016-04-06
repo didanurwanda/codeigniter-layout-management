@@ -65,7 +65,7 @@ $this->title = 'Hallo Content'; // set title
 
 ```PHP
 // on controller
-$this->view->setLayout('main2');
+$this->view->setLayout('layouts/main2');
 ```
 
 * Partial view
