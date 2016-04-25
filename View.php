@@ -56,7 +56,7 @@ class View
     public function render($view, $data = array(), $return = false)
     {
         $this->output = $this->renderPartial($view, $data, true);
-        $this->loadLayout($data, $return);
+        return $this->loadLayout($data, $return);
     }
 
     /**
@@ -86,6 +86,6 @@ class View
      */
     protected function loadLayout($data = array(), $return = false)
     {
-        $this->controller->load->view($this->layout, $data, $return);
+        return $this->controller->load->view($this->layout, $data, $return);
     }
 }
